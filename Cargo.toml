@@ -1,7 +1,13 @@
 [package]
-name = "rocket-blog"
+name = "weblogue"
 version = "0.1.0"
-authors = ["Luke Osborne"]
+authors = ["lukewosborne@gmail.com"]
+
+
+[[bin]]
+name = "weblogue"
+path = "src/weblogue.rs"
+
 
 [dependencies]
 rocket = "0.4.0-rc.1"
