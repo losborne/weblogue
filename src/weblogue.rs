@@ -12,22 +12,19 @@ use tera::Context;
 
 #[cfg(test)] mod tests;
 
-#[get("/<file..>")]
-fn static_content(file: PathBuf) -> std::io::Result<NamedFile> {
-    NamedFile::open(Path::new("static/").join(file))
-}
-
 #[get("/")]
 fn index() -> Template {
     let mut context = Context::new();
 
     context.insert("page_content", "Weblogue: notes from a lifelong quest of learning.");
+    context.insert("posts", "a");
     Template::render("index", &context)
 }
 
 fn rocket() -> rocket::Rocket {
     rocket::ignite()
-        .mount("/", routes![index, static_content])
+        .mount("/", StaticFiles::from("static/"))
+        .mount("/", routes![index])
         .attach(Template::fairing())
 }
 
