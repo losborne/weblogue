@@ -1,0 +1,7 @@
+{% extends "base" %}
+{% block title %}Weblogue{% endblock title %}
+
+{% block content %}
+<h1>This is the blog page.</h1>
+<p>The blog contents go here</p>
+{% endblock content %}
