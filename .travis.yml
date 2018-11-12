@@ -25,7 +25,7 @@ before_script:
   - cargo clean
   - psql -c 'create database dbtest;' -U postgres
   - echo "DATABASE_URL=postgres://postgres@localhost/dbtest" > .env
-  - cargo install diesel_cli --no-default-features --features=postgres
+  - cargo install diesel_cli --no-default-features --features=postgres --force
   - diesel migration run
 
 script:
