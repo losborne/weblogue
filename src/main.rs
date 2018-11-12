@@ -9,6 +9,7 @@ extern crate tera;
 
 use diesel::prelude::*;
 use rocket_contrib::templates::Template;
+use rocket_contrib::serve::StaticFiles;
 use weblogue::*;
 use weblogue::models::*;
 use rocket::{get, routes};
@@ -32,6 +33,7 @@ fn rocket() -> rocket::Rocket {
     rocket::ignite()
         .manage(create_db_pool_and_seed())
         .mount("/", routes![index])
+        .mount("/", StaticFiles::from("static"))
         .attach(Template::fairing())
 }
 
