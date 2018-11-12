@@ -22,13 +22,13 @@ matrix:
     - rust: nightly
 
 before_script:
+  - cargo clean
   - psql -c 'create database dbtest;' -U postgres
   - echo "DATABASE_URL=postgres://postgres@localhost/dbtest" > .env
   - cargo install diesel_cli --no-default-features --features=postgres
   - diesel migration run
 
 script:
-  - cargo clean
   - cargo build --verbose --all
   - cargo test --verbose --all
   
