@@ -30,7 +30,7 @@ fn index(connection: DbConn) -> Template {
 
 fn rocket() -> rocket::Rocket {
     rocket::ignite()
-        .manage(create_db_pool())
+        .manage(create_db_pool_and_seed())
         .mount("/", routes![index])
         .attach(Template::fairing())
 }
