@@ -1,5 +1,23 @@
+:root {
+  --black: #000000;
+  --ink: #062F4F;
+  --posy: #813772;
+  --embers: #882601;
+}
+
 html {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+.post-title {
+  display: block;
+  color: var(--ink);
+  text-align: center;
+}
+
+.post-content {
+  display: block;
+  color: var(--black);
+  text-align: center;
+}
 
