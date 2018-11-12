@@ -1,6 +1,9 @@
 language: rust
 sudo: required
 cache: cargo
+services:
+  - postgresql
+
 dist: trusty
 os:
   - linux
@@ -18,10 +21,16 @@ matrix:
   allow_failures:
     - rust: nightly
 
+before_script:
+  - psql -c 'create database dbtest;' -U postgres
+  - echo "DATABASE_URL=postgres://postgres@localhost/dbtest" > .env
+  - cargo install diesel_cli --no-default-features --features=postgres
+  - diesel migration run
+
 script:
   - cargo clean
-  - cargo build
-  - cargo test
+  - cargo build --verbose --all
+  - cargo test --verbose --all
   
 after_success: |
   RUSTFLAGS="--cfg procmarco2_semver_exempt" cargo install cargo-tarpaulin
