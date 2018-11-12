@@ -1,0 +1,9 @@
+write Tests
+error routes
+travis
+codecov
+add CSS Styles
+add way to create posts
+  Via CLI
+  Via browser
+write first post

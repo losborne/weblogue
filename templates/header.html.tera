@@ -1,6 +1,5 @@
 <div class="columns">
   <div class="column">Home</div>
-  <div class="column">Posts</div>
-  <div class="column">About Me</div>
-  <div class="column">Random</div>
+  <div class="column">Coding Posts</div>
+  <div class="column">Cycling Posts</div>
 </div>

@@ -2,6 +2,11 @@
 {% block title %}Weblogue{% endblock title %}
 
 {% block content %}
-<h1>This is the blog page.</h1>
-<p>The blog contents go here</p>
+  {% for post in posts %}
+    <div class="post">
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.body }}</p>
+    </div>
+  {% endfor %}
 {% endblock content %}
+
