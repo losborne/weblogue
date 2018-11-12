@@ -1,3 +1,7 @@
+
+[![Build Status](https://travis-ci.org/0xidation/anti-social-network.svg?branch=master)](https://travis-ci.org/losborne/weblogue) 
+[![codecov](https://codecov.io/gh/losborne/weblogue/branch/master/graph/badge.svg)](https://codecov.io/gh/losborne/weblogue)
+
 # Weblogue
 
 This is a simple blog powered by Rust (rocket.rs) and Postgres.
