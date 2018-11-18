@@ -1,5 +1,3 @@
-<div class="columns">
-  <div class="column">Home</div>
-  <div class="column">Coding Posts</div>
-  <div class="column">Cycling Posts</div>
-</div>
+<header>
+  <h1>WebLogue<h1>
+</header>
