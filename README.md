@@ -13,13 +13,14 @@ syntax-highlighted code in posts.
 It is currently in early stages.
 
 ## Installation Instructions
-  TODO
-  - Install rust
-  - Install and set up postgres
-  - Install and set up diesel
-  - Run app
+
+    TODO
+    * Install rust
+    * Install and set up postgres
+    * Install and set up diesel
+    * Run app
 
 ### References
-  - <https://github.com/notryanb/rust-blog-demo>
-  - <https://rocket.rs>
+    * <https://github.com/notryanb/rust-blog-demo>
+    * <https://rocket.rs>
   
