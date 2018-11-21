@@ -23,4 +23,3 @@ It is currently in early stages.
 ### References
     * <https://github.com/notryanb/rust-blog-demo>
     * <https://rocket.rs>
-  
