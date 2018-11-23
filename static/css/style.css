@@ -100,7 +100,7 @@ body {
 header, footer {
   font-size: large;
   text-align: center;
-  padding: 0.3em 0;
+  padding: 0.2em 0;
   background-color: var(--background);
   color: var(--text-color);
 
@@ -113,7 +113,12 @@ header a {
 nav {
   background: var(--background);
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+section {
+  background: var(--background);
+  text-align: center;
 }
 
 main {
@@ -125,8 +130,9 @@ body {
   display: grid;
   min-height: 100vh;
   grid-template-columns: 1fr 700px 1fr;
-  grid-template-rows: min-content  min-content 1fr min-content;
+  grid-template-rows: min-content min-content min-content 1fr min-content;
 }
+
 
 header {
   grid-row: 1;
@@ -138,15 +144,49 @@ nav {
   grid-column: 1 / 4;
 }
 
+section {
+  align-items: center;
+  grid-row: 3;
+  grid-column: 1 / 4;
+}
+
 main {
   max-width: 80ch;
   align-items: center;
-  grid-row: 3;
+  grid-row: 4;
   grid-column: 2 / 3;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 footer {
-  grid-row: 4;
+  grid-row: 5;
   grid-column: 1 / 4;
+}
+
+.amber {
+  background-color: var(--amber);
+}
+
+.light-amber {
+  background-color: var(--light-amber);
+}
+
+.green-1 {
+  background-color: var(--green-1);
+}
+
+.apple-green {
+  background-color: var(--apple-green);
+}
+
+.green-2 {
+  background-color: var(--green-2);
+}
+
+.apple-2c {
+  background-color: var(--apple-2c);
+}
+
+.green-3 {
+  background-color: var(--green-3);
 }

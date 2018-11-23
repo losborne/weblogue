@@ -10,9 +10,11 @@
   <body>
     {% include "header" %}
     {% include "nav" %}
+    {% include "colorpicker" %}
     <main>
       {% block content %}{% endblock content %}
     </main>
     {% include "footer" %}
+    <script src="scripts/colorpicker.js"></script>
   </body>
 </html>
