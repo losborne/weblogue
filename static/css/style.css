@@ -1,42 +1,25 @@
 /* Color Definitions */
 :root {
-  --main-blue: #009acb;
-  --main-white: #fffaff;
-  --main-grey: #393e41;
-  --main-light-grey: #d3d0cb;
-  --main-lighest-grey: #e7e5df;
-
-	--amber: #ffc107;
-	--aqua: #00ffff;
-	--blue: #2196F3;
-	--light-blue: #87CEEB;
-	--brown: #795548;
-	--cyan: #00bcd4;
-	--blue-grey: #607d8b;
-	--green: #4CAF50;
-	--light-green: #8bc34a;
-	--indigo: #3f51b5;
-	--khaki: #f0e68c;
-	--lime: #cddc39;
-	--orange: #ff9800;
-	--deep-orange: #ff5722;
-	--pink: #e91e63;
-	--purple: #9c27b0;
-	--deep-purple: #673ab7;
-	--red: #f44336;
-	--sand: #fdf5e6;
-	--teal: #009688;
-	--yellow: #ffeb3b;
-	--white: #ffffff;
-	--black: #000000;
-  --dark-grey: #111111;
-  --grey: #333333;
+	--amber: #ffb000;
+  --light-amber: #ffcc00;
+  --green-1: #33ff00;
+  --apple-green: #33ff33;
+  --green-2: #00ff33;
+  --apple-2c: #66ff66;
+  --green-3: #00ff66;
+  --background: #14120c;
+  --text-color: var(--amber);
 }
 
 /* Typography */
+@font-face {
+  font-family: 'modern-terminus';
+  src: url('../fonts/TerminusTTF-4.38.2.ttf');
+}
+
 html {
-  font-family: 'Source Sans Pro', sans-serif;
   font-size: 62.5%;
+  font-family: 'modern-terminus', 'monospace';
 }
 
 body {
@@ -44,8 +27,8 @@ body {
   line-height: 1.618;
   max-width: 38em;
   margin: auto;
-  color: var(--main-lightest-grey);
-  background-color: var(--main-light-grey);
+  color: var(--text-color);
+  background-color: var(--background);
   padding: 13px;
 }
 
@@ -63,7 +46,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
-  font-family: Verdana, Geneva, sans-serif;
   font-weight: 450;
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -73,15 +55,16 @@ h1, h2, h3, h4, h5, h6 {
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto;
+  color: var(--text-color);
 }
 
 a {
   font-size: 1em;
-  color: var(--main-blue);
+  color: var(--text-color);
 }
 
 hr {
-  color: var(--main-blue);
+  color: var(--text-color);
 }
 
 h1 {
@@ -90,12 +73,10 @@ h1 {
 
 h2 {
   font-size: 2em;
-  color: var(--main-blue);
 }
 
 h3 {
   font-size: 1.75em;
-  color: var(--main-blue);
 }
 
 h4 {
@@ -115,35 +96,35 @@ body {
   margin: 0;
   padding: 0;
   max-width: inherit;
-  background: var(--main-grey);
-  color: var(--main-grey);
+  background: var(--background);
+  color: var(--text-color);
 }
 
 header, footer {
   font-size: large;
   text-align: center;
   padding: 0.3em 0;
-  background-color: var(--main-grey);
-  color: var(--white);
+  background-color: var(--background);
+  color: var(--text-color);
 }
 
 nav {
-  background: var(--main-grey);
+  background: var(--background);
   text-align: center;
   padding-bottom: 20px;
 }
 
 main {
-  background: var(--main-light-grey);
+  background: var(--background);
 }
 
 section {
-  background: var(--main-light-grey);
+  background: var(--background);
 }
 
 aside {
-  background: var(--main-light-grey);
-  color: var(--main-grey)
+  background: var(--background);
+  color: var(--text-color)
 }
 
 /* Grid */
