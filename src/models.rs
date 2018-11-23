@@ -5,6 +5,7 @@ pub struct Post {
     pub id: i32,
     pub title: String,
     pub body: String,
+    pub date: String,
     pub published: bool,
 }
 
@@ -14,5 +15,6 @@ use super::schema::posts;
 pub struct NewPost {
     pub title: String,
     pub body: String,
+    pub date: String,
 }
 

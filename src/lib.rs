@@ -15,12 +15,16 @@ use std::io;
 
 use self::models::{Post, NewPost};
 
-pub fn create_post<'a>(conn: &PgConnection, title: &'a str, body: &'a str) -> Post {
+pub fn create_post<'a>(conn: &PgConnection,
+                       title: &'a str,
+                       body: &'a str,
+                       date: &'a str) -> Post {
     use schema::posts;
 
     let new_post = NewPost {
         title: title.to_string(),
         body: body.to_string(),
+        date: date.to_string()
     };
 
     diesel::insert_into(posts::table)
@@ -83,6 +87,7 @@ fn seed(connection: DbConn) {
         NewPost {
             title: fake!(Lorem.sentence(1,4)),
             body: fake!(Lorem.paragraph(5,5)),
+            date: "2018-11-23".to_string()
         }
     }
 

@@ -1,6 +1,6 @@
 <nav>
   <a href="posts">POSTS</a>
   <a href="about">ABOUT ME</a>
-  <a href="feed.xml">RSS</a>
+  <!-- <a href="feed.xml">RSS</a> -->
   <a href="https://github.com/losborne">GITHUB</a>
 </nav>
