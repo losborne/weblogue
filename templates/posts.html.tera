@@ -1,0 +1,6 @@
+{% extends "base" %}
+{% block content %}
+  {% for post in posts %}
+    <h4><a href="">{{post.date}}</a> - {{post.title}}</h4>
+  {% endfor %}
+{% endblock content %}

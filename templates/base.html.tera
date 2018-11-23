@@ -5,16 +5,14 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     <link rel="icon" href="images/favicon.ico" type="image/png" />
-    <title>{% block title %}{% endblock title %}</title>
+    <title>WebLogue</title>
   </head>
   <body>
     {% include "header" %}
     {% include "nav" %}
-    {% include "section" %}
     <main>
       {% block content %}{% endblock content %}
     </main>
-    {% include "aside" %}
     {% include "footer" %}
   </body>
 </html>
