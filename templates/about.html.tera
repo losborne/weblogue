@@ -1,5 +1,38 @@
 {% extends "base" %}
 
 {% block content %}
-  <p>This description is under construction.</p>
+  <h3>Hello, world!</h3>
+  <p>
+    I'm a software engineer living in the Greater Boston Area and currently
+    working at <a href=https://mitre.org>MITRE</a>.
+  </p>
+
+  <p>
+    Taking a somewhat roundabout path into the world of coding, I first got a
+    B.A in Classics (both Greek and Latin) before teaching English and learning
+    Chinese for a few years at <a
+    href="https://en.wikipedia.org/wiki/Central_China_Normal_University
+    ">Central China Normal University</a> in Wuhan, China.  I then returned to
+    the states and got an M.S. in Computer Engineering with cybersecurity
+    specialization from Boston University through their fantastic <a
+    href="https://www.bu.edu/academics/eng/programs/leap/">LEAP</a> program.
+  </p>
+
+  <p>
+    I am always striving to improve myself, either through learning new
+    technologies or methods, adding tools to my repertoire, or optimizing my
+    workflow.  I enjoy being on highly productive and motivated teams with
+    teammates that are as passionate as I am.
+  </p>
+
+  <p>
+    Hobbies and interests include cycling, science fiction, chess, various video
+    games, and cooking.
+  </p>
+
+  <p>
+    Feel free to reach out with any questions or concerns, or just to say, 'Hi'.
+    My contact is in the footer below.
+  </p>
+
 {% endblock content %}
