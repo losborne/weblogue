@@ -126,6 +126,15 @@ main {
   background: var(--background);
 }
 
+ul {
+	-moz-column-count: 4;
+	-moz-column-gap: 20px;
+	-webkit-column-count: 4;
+	-webkit-column-gap: 20px;
+	column-count: 4;
+	column-gap: 20px;
+}
+
 /* Grid */
 body {
   display: grid;
@@ -133,7 +142,6 @@ body {
   grid-template-columns: 1fr 80ch 1fr;
   grid-template-rows: min-content min-content min-content 1fr min-content;
 }
-
 
 header {
   grid-row: 1;
